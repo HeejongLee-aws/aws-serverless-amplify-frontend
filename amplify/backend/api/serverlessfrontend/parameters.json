@@ -1,0 +1,12 @@
+{
+    "AppSyncApiName": "serverlessfrontend",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authserverlessfrontend4f5430a4",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "ArtistBackendServiceEndpoint": "https://gg3vewylxvhjzfrsojx2im7zla.appsync-api.ap-northeast-2.amazonaws.com"
+}
